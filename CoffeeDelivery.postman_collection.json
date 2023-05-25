@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "503a20de-4614-4672-a1a8-8c89abf294d6",
+		"name": "CoffeeDelivery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "22340919"
+	},
+	"item": [
+		{
+			"name": "get 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/get/6"
+			},
+			"response": []
+		},
+		{
+			"name": "addEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"consumer_id\": 1,\r\n    \"order_id\": 5,\r\n    \"employee_id\": 1,\r\n    \"plan_date_delivery\": null,\r\n    \"product_id\": 1,\r\n    \"price\": 99.99,\r\n    \"date\": \"28.05.2023\",\r\n    \"cancellation_reasons\": null,\r\n    \"status\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/addEvent"
+			},
+			"response": []
+		},
+		{
+			"name": "addIssuedEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_id\": 6,\r\n    \"employee_id\": 1,\r\n    \"date\": \"28.05.2023\",\r\n    \"status\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/addEvent"
+			},
+			"response": []
+		},
+		{
+			"name": "addDelivetyEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_id\": 6,\r\n    \"employee_id\": 1,\r\n    \"date\": \"28.05.2023\",\r\n    \"status\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/addEvent"
+			},
+			"response": []
+		},
+		{
+			"name": "addToWork",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"consumer_id\": 1,\r\n    \"order_id\": 5,\r\n    \"employee_id\": 1,\r\n    \"plan_date_delivery\": null,\r\n    \"product_id\": 1,\r\n    \"price\": 99.99,\r\n    \"date\": \"28.05.2023\",\r\n    \"cancellation_reasons\": null,\r\n    \"status\": 5,\r\n    \"order_number\": \"AAA1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/addEvent"
+			},
+			"response": []
+		},
+		{
+			"name": "addRegistrationEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"consumer_id\": 1,\r\n    \"order_id\": 6,\r\n    \"employee_id\": 1,\r\n    \"plan_date_delivery\": \"30.05.2023\",\r\n    \"product_id\": 1,\r\n    \"price\": 99.99,\r\n    \"date\": \"28.05.2023\",\r\n    \"status\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/addEvent"
+			},
+			"response": []
+		},
+		{
+			"name": "addCancceledEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_id\": 6,\r\n    \"employee_id\": 1,\r\n    \"date\": \"28.05.2023\",\r\n    \"cancellation_reasons\": \"клиент отказался\",\r\n    \"status\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/addEvent"
+			},
+			"response": []
+		}
+	]
+}
